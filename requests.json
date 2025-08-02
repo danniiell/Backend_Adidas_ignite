@@ -26,10 +26,10 @@
       "video-video1.mp4",
       "audio-audio1.mp3"
     ],
-    "status": "Approved",
-    "adminComments": "Aprobado",
+    "status": "Rejected",
+    "adminComments": "Rechazado",
     "createdAt": "2025-07-30T15:23:48.530Z",
-    "updatedAt": "2025-07-30T23:51:23.263Z"
+    "updatedAt": "2025-08-02T22:17:49.686Z"
   },
   {
     "id": "f63d074f-4b53-4378-9608-8c192e4cdea1",
@@ -60,5 +60,53 @@
     "adminComments": "Aprobado para campaña de agosto",
     "createdAt": "2025-08-02T03:56:45.361Z",
     "updatedAt": "2025-08-02T03:57:28.214Z"
+  },
+  {
+    "id": "1b8536f4-14f8-4498-bee1-dc3745c6df5a",
+    "requesterName": "Stefany",
+    "requesterEmail": "steff2lop@gmail.com",
+    "purpose": "uso para piezas de redes",
+    "deadline": "2025-08-09",
+    "items": [
+      "image-sports_(1).jpg",
+      "image-sports_(2).jpg",
+      "image-sports_(6).jpg",
+      "image-sports_(5).jpg",
+      "audio-high-impact.mp3"
+    ],
+    "status": "Pending",
+    "adminComments": "",
+    "createdAt": "2025-08-02T22:01:34.178Z",
+    "updatedAt": "2025-08-02T22:01:34.178Z"
+  },
+  {
+    "id": "605d0820-ca1e-480f-a457-e7c55efba54a",
+    "requesterName": "Stefany López",
+    "requesterEmail": "steff2lop@gmail.com",
+    "purpose": "Video promocional",
+    "deadline": "2025-08-22",
+    "items": [
+      "image-sports_(7).jpg",
+      "image-sports_(8).jpg",
+      "image-sports_(2).jpg"
+    ],
+    "status": "Pending",
+    "adminComments": "",
+    "createdAt": "2025-08-02T22:01:57.759Z",
+    "updatedAt": "2025-08-02T22:01:57.759Z"
+  },
+  {
+    "id": "9ee3975e-6781-4e8a-9353-06fcde99284e",
+    "requesterName": "Stefany López",
+    "requesterEmail": "steff2lop@gmail.com",
+    "purpose": "Tarjeta de invitación",
+    "deadline": "2025-08-04",
+    "items": [
+      "image-sports_(4).jpg"
+    ],
+    "status": "Approved",
+    "adminComments": "Aprobado",
+    "createdAt": "2025-08-02T22:02:25.378Z",
+    "updatedAt": "2025-08-02T22:19:58.244Z"
   }
 ]

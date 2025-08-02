@@ -4,5 +4,11 @@
     "email": "est.daniel.colmena@unimilitar.edu.co",
     "password": "1234567890",
     "createdAt": "2025-07-29T20:01:37.854Z"
+  },
+  {
+    "id": "steff2lop@gmail.com",
+    "email": "steff2lop@gmail.com",
+    "password": "adidas",
+    "createdAt": "2025-08-02T21:47:59.363Z"
   }
 ]
