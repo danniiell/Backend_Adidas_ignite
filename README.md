@@ -58,6 +58,7 @@ instlar todas las dependencias con npm install/////////////////
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
+    "nodemailer": "^7.0.5",
     "uuid": "^11.1.0"
   }
 
