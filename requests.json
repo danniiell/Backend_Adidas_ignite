@@ -6,7 +6,7 @@
     "purpose": "wertyuio",
     "deadline": "2025-08-21",
     "items": [
-      "running.mp4",
+      "video-running.mp4",
       "audio-audio1.mp3"
     ],
     "status": "Approved",
@@ -21,9 +21,9 @@
     "purpose": "wq3454y6576iykujthrgefwwdas",
     "deadline": "2025-08-21",
     "items": [
-      "sports_(3).jpg",
-      "sports_(7).jpg",
-      "box.mp4.mp4",
+      "image-sports_(3).jpg",
+      "image-sports_(7).jpg",
+      "video-box.mp4.mp4",
       "audio-audio1.mp3"
     ],
     "status": "Rejected",
