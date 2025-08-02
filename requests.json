@@ -108,5 +108,22 @@
     "adminComments": "Aprobado",
     "createdAt": "2025-08-02T22:02:25.378Z",
     "updatedAt": "2025-08-02T22:19:58.244Z"
+  },
+  {
+    "id": "a74911ba-d158-42f8-89bc-6fe4279a801e",
+    "requesterName": "Stefany",
+    "requesterEmail": "steff2lop@gmail.com",
+    "purpose": "Videoclip piromocional",
+    "deadline": "2025-08-07",
+    "items": [
+      "video-box.mp4",
+      "video-basket.mp4",
+      "video-running.mp4",
+      "audio-high-impact.mp3"
+    ],
+    "status": "Pending",
+    "adminComments": "",
+    "createdAt": "2025-08-02T22:49:29.264Z",
+    "updatedAt": "2025-08-02T22:49:29.264Z"
   }
 ]
