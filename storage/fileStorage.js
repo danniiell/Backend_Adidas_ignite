@@ -22,8 +22,15 @@ function writeData(datos) {
   }
 }
 
+function get(id) {
+  const data = readData();
+  return data.find(item => item.id === id);
+}
+
 module.exports = {
   getAll: () => readData(),
+
+  get,
 
   add: (newob) => {
     const cont = readData();
