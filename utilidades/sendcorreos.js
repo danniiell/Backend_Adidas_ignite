@@ -1,8 +1,8 @@
-// utilidades/sendcorreos.js
-const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer'); // Email transport library
 
+//Transport Configuration
 const transporter = nodemailer.createTransport({
-  host: 'sandbox.smtp.mailtrap.io',
+  host: 'sandbox.smtp.mailtrap.io', // Mailtrap SMTP server
   port: 2525,
   auth: {
     user: '49e876fccf33ea',
@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-
+// Send Email Function
 async function sendCorreo(destinatario, asunto, mensaje) {
   try {
     await transporter.sendMail({

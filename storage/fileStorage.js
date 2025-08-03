@@ -1,9 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs'); // Handles file system operations
+const path = require('path'); // Resolves file paths
 
-// Apunta al requests.json en la raíz de backend
+// Absolute path to the JSON file
 const DB = path.join(__dirname, '../requests.json');
 
+// Read Function
 function readData() {
   try {
     const datos = fs.readFileSync(DB, 'utf8');
@@ -14,6 +15,7 @@ function readData() {
   }
 }
 
+//  Write Function
 function writeData(datos) {
   try {
     fs.writeFileSync(DB, JSON.stringify(datos, null, 2), 'utf8');
@@ -22,23 +24,28 @@ function writeData(datos) {
   }
 }
 
+//  Retrieve a single request by ID
 function get(id) {
   const data = readData();
   return data.find(item => item.id === id);
 }
 
 module.exports = {
+  // Retrieves all requests
   getAll: () => readData(),
 
+  // Retrieves a specific request by ID
   get,
 
+  // Adds a new request to the JSON file
   add: (newob) => {
     const cont = readData();
     cont.push(newob);
     writeData(cont);
     return newob;
   },
-
+  
+  // Updates an existing request by ID
   update: (id, actual) => {
     const cont = readData();
     const ids = cont.findIndex(r => r.id === id);

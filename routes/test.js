@@ -223,6 +223,11 @@ router.post('/admin/login', (req, res) => {
   if (!email || !password) {
     return res.status(400).json({ message: 'Correo y contraseña son obligatorios' });
   }
+  
+  const emailForm = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  if (!emailForm.test(email)) {
+    return res.status(400).json({ message: 'Formato de correo inválido' });
+  }
 
   const user = adminUsers.validateLogin(email, password);
   if (!user) {

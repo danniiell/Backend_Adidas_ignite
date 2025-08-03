@@ -1,202 +1,295 @@
-# **Formulario de Solicitud de Activos Digitales para Equipos de Marketing**
+# **Digital Asset Request Form for Marketing Teams**
 
-## Información del Repositorio
-Este proyecto está alojado en [GitHub](https://github.com/tu-usuario/tu-repositorio). 
+## Repository Information
+This project is hosted on GitHub
 
-## **Descripción del Proyecto**
-Este proyecto permite a los equipos de marketing visualizar una galería de activos digitales y enviar solicitudes para su uso. Los administradores pueden gestionar estas solicitudes a través de un panel de control dedicado, aprobándolas o rechazándolas según corresponda.
+### Frontend  
+[GitHub](https://github.com/StefanyLopez/Frontend_adidas_ignite)
+
+### Backend  
+[GitHub](https://github.com/danniiell/Backend_Adidas_ignite)
 
 ---
 
-## **Objetivos del Proyecto**  ¿Qué metas técnicas o de experiencia de usuario se plantearon?
-- Desarrollar una galería web ligera para activos digitales.
-- Permitir a los usuarios enviar solicitudes con campos para tipo de activo, propósito y fecha límite.
-- Proporcionar un panel de administración para revisar y actualizar estados de solicitudes.
-- Mostrar indicadores de estado: `Pendiente`, `Aprobado`, `Rechazado`.
-- Notificaciones en pantalla.
-- Requerimientos : Galeria de se accesible formulario disponible el tema de marketing requeste dash borad solo para admin atutenciacion basica notifi visuales hostorial de solictudes filtro o busacdor en la galeria 
-- no funcionesles interfax intuitiva responsisve carga rapida de galeria scalabilidad mas tipos de assets compliance (accesibilty) contraste y todo en su lugar informacion.
+## **Project Description**
+This project enables marketing teams to view a digital asset gallery and submit requests for use. Administrators can manage these requests via a dedicated dashboard, approving or rejecting them as needed.
 
+---
 
-## **Tecnologías Utilizadas**
+## Project Objectives
 
-| Área        | Tecnología               |
-|-------------|--------------------------|
-| Frontend    | React + Tailwind CSS     |
-| Backend     | Node.js + Express        |
-| Diseño      | Figma                    |
-| Base de datos | Archivos JSON          |
+### Technical
+- Develop a lightweight web gallery for digital assets.
+- Implement a request system with fields like asset type, purpose, and deadline.
+- Create an admin panel to review, approve, or reject requests.
+- Integrate automatic email notifications upon status changes.
 
+### User Experience
+- Search and filter by keyword and file type.
+- Multi-selection of assets with preview (dimensions, size).
+- Admin login with secure authentication.
+- On-screen visual notifications.
 
+### Design & Accessibility
+- Responsive interface for desktop and tablet.
+- Intuitive navigation for users and admins.
+- Error handling with clear and friendly messages.
+- Security: form validation and secure authentication.
 
-## **Configuración del Proyecto** ¿Qué dependencias se deben instalar?
+### Scalability
+- Prepared to support new file types and future functionalities.
 
-instlar todas las dependencias con npm install/////////////////
+---
 
-### Backend
+## **Technologies Used**
 
+| Area         | Technology            |
+|--------------|------------------------|
+| Frontend     | React + Tailwind CSS   |
+| Backend      | Node.js + Express      |
+| Design       | Figma                  |
+| Database     | JSON Files             |
+
+---
+
+## System Requirements
 
 ```bash
-    cd backend
-    $env:DEBUG='myapp:*'; npm start
+Install Node.js
+```
+
+---
+
+## **Project Setup**
+
+Install all dependencies from the root:
+```bash
+npm install
+```
+
+### Backend
+```bash
+cd backend
+$env:DEBUG='myapp:*'; npm start
 ```
 
 ### Frontend
-
 ```bash
-    cd frontend
-    npm run dev
+cd frontend
+npm run dev
 ```
 
-### Dependecias Backend
+---
 
-    "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1",
-    "nodemailer": "^7.0.5",
-    "uuid": "^11.1.0"
-  }
+### Backend Dependencies
 
-### Dependecias Frontend
+```json
+"dependencies": {
+  "cookie-parser": "~1.4.4",
+  "cors": "^2.8.5",
+  "debug": "~2.6.9",
+  "express": "~4.16.1",
+  "http-errors": "~1.6.3",
+  "jade": "~1.11.0",
+  "morgan": "~1.9.1",
+  "nodemailer": "^7.0.5",
+  "swagger-jsdoc": "^6.2.8",
+  "swagger-ui-express": "^5.0.1",
+  "uuid": "^11.1.0"
+}
+```
 
+### Frontend Dependencies
 
-## Prueba del sistema 
+```json
+"dependencies": {
+  "@splinetool/react-spline": "^4.1.0",
+  "@tailwindcss/vite": "^4.1.11",
+  "axios": "^1.11.0",
+  "framer-motion": "^12.23.11",
+  "gsap": "^3.13.0",
+  "lucide-react": "^0.534.0",
+  "next": "^15.4.4",
+  "react": "^19.1.1",
+  "react-dom": "^19.1.1",
+  "react-router-dom": "^7.7.1",
+  "tailwindcss": "^4.1.11"
+}
+```
 
-Acceso interactivo: http://localhost:3000/api-docs
+---
 
-## Endpoints de la API 
+## System Testing
 
-### Crear Nueva Solicitud
-**POST /test/requests**
+Interactive access:  
+[http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 
-Cuerpo de la solicitud:
+---
 
-json
+## API Endpoints
+
+### Create New Request  
+**POST** `/test/requests`
+
+**Request body**:
+```json
 {
   "id": "b1adb1c4-d37e-4a40-9caa-9c74be99bb97",
   "requesterName": "Santiago",
   "requesterEmail": "ing.daniel@gmail.com",
-  "purpose": "PROMOCION VERANO",
+  "purpose": "SUMMER PROMO",
   "deadline": "2025-08-21",
   "items": ["video-video1.mp4", "audio-audio1.mp3"],
   "status": "Pending",
-  "adminComments": "Aprobado",
+  "adminComments": "Approved",
   "createdAt": "2025-07-30T01:44:23.262Z",
   "updatedAt": "2025-07-30T23:51:19.624Z"
 }
+```
 
-    Respuesta: 201 Created     Solicitud creada exitosamente
-    Respuesta: 400 Bad Request Campos requeridos faltantes
+- **201 Created** – Request created successfully  
+- **400 Bad Request** – Missing required fields  
 
+---
 
-### Obtener Todas las Solicitudes
-**GET /test/requests**
+### Get All Requests  
+**GET** `/test/requests`
 
-    *Respuesta: 200 OK	   Lista de solicitudes*
-    *Respuesta: 204 No Content No hay solicitudes registradas*
+- **200 OK** – List of requests  
+- **204 No Content** – No requests available  
 
-### Actualizar Estado de Solicitud
-**PATCH /test/requests/:id**
+---
 
-Cuerpo de la solicitud:
+### Update Request Status  
+**PATCH** `/test/requests/:id`
 
-json
+**Request body**:
+```json
 {
   "status": "Approved",
-  "adminComments": "Aprobado para campaña de agosto"
+  "adminComments": "Approved for August campaign"
 }
+```
 
-    *Respuesta: 200 OK  Solicitud actualizada*
-    *Respuesta: 404 Not Found Solicitud no encontrada*
+- **200 OK** – Request updated  
+- **404 Not Found** – Request not found  
 
-### Crear Cuenta de Administrador
-**POST /admin/create**
+---
 
-Cuerpo de la solicitud:
+### Create Admin Account  
+**POST** `/admin/create`
 
-json
+**Request body**:
+```json
 {
   "email": "admin@example.com",
   "password": "secure123"
 }
+```
 
-    *Respuesta: 201 Created     Usuario creado exitosamente*
-    *Respuesta: 400 Bad Request Datos faltantes*
-    *Respuesta: 409 Conflict    Correo ya registrado*
+- **201 Created** – Admin created  
+- **400 Bad Request** – Missing data  
+- **409 Conflict** – Email already registered  
 
+---
 
-### Inicio de Sesión de Administrador
-**POST /admin/login**
+### Admin Login  
+**POST** `/admin/login`
 
-Cuerpo de la solicitud:
-
-json
+**Request body**:
+```json
 {
   "email": "admin@example.com",
   "password": "secure123"
 }
+```
 
-    *Respuesta: 200 OK           login exitoso.*
-    *Respuesta: 400 Bad Request  Datos faltantes*
-    *Respuesta: 401 Unauthorized Credenciales incorrectas*
+- **200 OK** – Login successful  
+- **400 Bad Request** – Missing data  
+- **401 Unauthorized** – Invalid credentials  
 
+---
 
+### Simulate Email Sending (Mailtrap)  
+**GET** `/test/requests/{id}/summary`
 
-### Simulacion envio de correo con Mailtrap
-**GET /test/requests/{id}/summary** 
+- **200 OK** – Email sent successfully  
+- **400 Bad Request** – Request not yet approved or rejected  
+- **404 Not Found** – Request not found  
+- **500 Internal Server Error** – Failed to send email  
 
+---
 
-*Respuesta:200 OK: Correo enviado correctamente.
-*Respuesta:400     Bad Request: La solicitud aún no ha sido aprobada ni rechazada.
-*Respuesta:404     Not Found: Solicitud no encontrada.
-*Respuesta:500     Internal Server Error: Fallo al enviar el correo.
+## Design Artifacts  
+Design diagrams in Figma:  
+[Figma](https://www.figma.com/design/15JgwGWGz6yvRMucaOumCD/Ignite---Adidas?node-id=13-2378&t=lyxVKhsICZcIc1OP-1)
 
-## Artefactos de Diseño
+---
 
-    Diagramas y flujos disponibles en Figma: [Figma](https://www.figma.com/file/tu-id-de-proyecto)
+## Project Timeline  
+Gantt plan in ClickUp:  
+[ClickUp](https://app.clickup.com/9014793560/v/s/90143359183)
 
-## Cronograma del Proyecto
+---
 
-    Planificación tipo Gantt en ClickUp: [ClickUp](https://app.clickup.com/t/tu-id-de-tarea)
+## Known Issues and Future Improvements
 
-## Problemas Conocidos y Mejoras Futuras
+- No critical functionality pending  
+- Mobile responsiveness  
+- Custom icons  
+- Admin statistics  
+- Email with file attachments  
+- Admin account generation with unique identifiers  
+- Access validation for authorized users on deployment  
 
-    Ninguna funcionalidad crítica pendiente actualmente.
+---
 
+## Additional Documentation
 
-## Instrucciones de instalación más completas:
+### Backend Structure
 
-Variables de entorno requeridas  
+```
+backend/
+├── routes/
+│   └── test.js
+├── storage/
+│   ├── adminStorage.js
+│   └── fileStorage.js
+├── app.js
+├── adminusers.json
+├── requests.json
+├── package.json
+├── public/
+│   ├── videos/
+│   ├── audios/
+│   └── images/
+├── views/
+└── README.md
+```
 
+### Frontend Structure
 
-
-## Requisitos previos del sistema
-    
-    instalar node js
-
-## Documentación adicional:
-
-Estructura de archivos/proyecto  
-
-├── **backend/**
-│   ├── **routes/**                 # Rutas de la API con anotaciones Swagger
-│   │   └── **test.js**             # Endpoints para solicitudes y administración
-│   ├── **storage/**               # Módulos de almacenamiento en JSON
-│   │   ├── **adminStorage.js**    # Gestión de usuarios administradores 
-│   │   └── **fileStorage.js**      # Gestión de solicitudes 
-│   ├── **app.js**                  # Configuración principal de Express
-│   ├── **adminusers.json**         # Base de datos de administradores
-│   ├── **requests.json**           # Base de datos de solicitudes
-│   ├── **package.json**           # Configuración del proyecto y dependencias
-│   └── **public/**                 # Archivos multimedia organizados en subcarpetas:
-│       ├── **videos/**             # Archivos de video solicitables
-│       ├── **audios/**             # Archivos de audio solicitables
-│       └── **images/**             # Imágenes disponibles en la galería
-├── **views/**                     # Vistas Jade 
-├── **README.md**                  # Este archivo
-
+```
+frontend/
+├── public/
+│   └── logos/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Cart/
+│   │   ├── Gallery/
+│   │   └── ...
+│   ├── hooks/
+│   ├── pages/
+│   ├── styles/
+│   ├── utilities/
+│   ├── App.jsx
+│   ├── assetsData.js
+│   ├── main.jsx
+│   └── vite.env.d.tsx
+├── index.html
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
+```
