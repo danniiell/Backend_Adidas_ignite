@@ -312,8 +312,7 @@ router.get('/requests/:id/summary', async (req, res) => {
     return res.status(400).json({ error: 'La solicitud aún no ha sido aprobada ni rechazada' });
   }
 
-  const mensaje =
-    solicitud.status === 'Approved'
+  const mensaje = solicitud.status === 'Approved'
       ? `Hola ${solicitud.requesterName},\n\nTu solicitud ha sido aprobada. A continuación se listan los archivos que puedes utilizar:\n\n${solicitud.items.map(i => `- ${i}`).join('\n')}\n\nGracias por tu solicitud.`
       : `Hola ${solicitud.requesterName},\n\nTu solicitud ha sido rechazada. Por favor revisa los requisitos y vuelve a enviarla si lo consideras necesario.\n\nGracias por tu interés.`;
 
@@ -323,6 +322,6 @@ router.get('/requests/:id/summary', async (req, res) => {
   if (resultado.success) {
     res.json({ success: true, message: 'Correo enviado correctamente' });
   } else {
-    res.status(500).json({ error: 'No se pudo enviar el correo' });
+    res.status(500).json({ error: 'Error en el servidor, no se pudo enviar el correo' });
   }
 });

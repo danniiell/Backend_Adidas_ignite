@@ -165,10 +165,10 @@
     "items": [
       "video-box.mp4"
     ],
-    "status": "Pending",
-    "adminComments": "",
+    "status": "Rejected",
+    "adminComments": "Rejected",
     "createdAt": "2025-08-02T23:48:59.551Z",
-    "updatedAt": "2025-08-02T23:48:59.551Z"
+    "updatedAt": "2025-08-04T02:17:37.346Z"
   },
   {
     "id": "9f1dd154-0656-472b-9407-85fa5d205b66",
@@ -182,10 +182,10 @@
       "image-sports_(4).jpg",
       "video-basket.mp4"
     ],
-    "status": "Pending",
-    "adminComments": "",
+    "status": "Rejected",
+    "adminComments": "Rejected",
     "createdAt": "2025-08-02T23:50:33.906Z",
-    "updatedAt": "2025-08-02T23:50:33.906Z"
+    "updatedAt": "2025-08-04T02:17:36.633Z"
   },
   {
     "id": "7a0d367b-d968-49b2-978a-85d06b5e42c1",
@@ -203,10 +203,10 @@
       "image-sports_(8).jpg",
       "image-sports_(2).jpg"
     ],
-    "status": "Pending",
-    "adminComments": "",
+    "status": "Rejected",
+    "adminComments": "Rejected",
     "createdAt": "2025-08-02T23:51:24.798Z",
-    "updatedAt": "2025-08-02T23:51:24.798Z"
+    "updatedAt": "2025-08-04T02:17:35.752Z"
   },
   {
     "id": "fbd2eedd-cb72-4c14-ae48-23c5cfc06e61",
@@ -219,9 +219,9 @@
       "image-sports_(2).jpg",
       "video-shoes.mp4"
     ],
-    "status": "Pending",
-    "adminComments": "",
+    "status": "Rejected",
+    "adminComments": "Rejected",
     "createdAt": "2025-08-02T23:52:36.514Z",
-    "updatedAt": "2025-08-02T23:52:36.514Z"
+    "updatedAt": "2025-08-04T02:17:34.231Z"
   }
 ]
